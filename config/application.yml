@@ -1,0 +1,14 @@
+development:
+  base_url: http://juvia.yoursite.com
+  from: juvia@yoursite.com
+  email_method: sendmail
+
+test:
+  base_url: http://juvia.yoursite.com
+  from: juvia@yoursite.com
+  email_method: test
+
+production:
+  base_url: http://$app-$domain.rhcloud.com
+  from: juvia@yoursite.com
+  email_method: sendmail
