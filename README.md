@@ -2,6 +2,36 @@
 
 Juvia for OpenShift template.
 
+## Installation
+
+Create OpenShift application
+
+    rhc app create -a $name -t ruby-1.8
+
+and enter the directory
+
+	cd $name
+
+Add this repository as new remote
+
+	git remote add juvia -m master git://github.com/marekjelen/juvia-openshift.git
+
+and pull locally
+
+	git pull -s recursive -X theirs juvia master
+
+edit Juvia configuration file
+
+    $EDITOR config/application.yml
+
+and deploy to OpenShift
+
+    git push origin master
+
+Your Juvia instance is available at
+
+	http://$name-$namespace.rhcloud.com
+
 ## About Juvia
 
 ![Logo](https://github.com/phusion/juvia/raw/master/app/assets/images/logo-128.png)
