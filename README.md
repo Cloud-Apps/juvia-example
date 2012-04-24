@@ -8,6 +8,10 @@ Create OpenShift application
 
     rhc app create -a $name -t ruby-1.8
 
+Add MySQL support to your application
+
+    rhc app cartridge add -a $name -c mysql-5.1
+
 and enter the directory
 
 	cd $name
