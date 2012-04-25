@@ -18,7 +18,7 @@ and enter the directory
 
 Add this repository as new remote
 
-	git remote add juvia -m master git://github.com/marekjelen/juvia-openshift.git
+	git remote add juvia -m master git://github.com/openshift/juvia-openshift.git
 
 and pull locally
 
